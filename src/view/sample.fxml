@@ -7,13 +7,12 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Controller">
    <children>
       <TextField fx:id="input_tf" />
       <HBox prefHeight="42.0" prefWidth="400.0">
          <children>
-            <Button fx:id="search_btn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="190.0" text="Search ...">
+            <Button fx:id="search_btn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#doSearch" prefHeight="40.0" prefWidth="190.0" text="Search ...">
                <padding>
                   <Insets right="10.0" />
                </padding>
@@ -21,7 +20,7 @@
                   <Insets right="10.0" />
                </HBox.margin>
             </Button>
-            <Button fx:id="search_exact_btn" mnemonicParsing="false" prefHeight="40.0" prefWidth="190.0" text="Search Extract ...">
+            <Button fx:id="search_exact_btn" mnemonicParsing="false" onMouseClicked="#doExactSearch" prefHeight="40.0" prefWidth="190.0" text="Search Extract ...">
                <padding>
                   <Insets left="10.0" />
                </padding>
